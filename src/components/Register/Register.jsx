@@ -23,8 +23,8 @@ export default function Register() {
     .then((res) =>{
       setisLoading(false)
       if(res.data.message == "success"){
-        localStorage.setItem("userToken", res.data.token)
-        setuserLogin(res.data.token)
+        // localStorage.setItem("userToken", res.data.token)
+        setuserLogin(false)
         navigate("login")
       }
       
